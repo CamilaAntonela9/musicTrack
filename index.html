@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music Track Demo</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #000000;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      color: white;
+    }
+    .linea{
+        width: 100%;
+        height: 2px;
+        background-color: #1ed760;
+        box-shadow: 0 8px 16px rgba(43, 136, 31, 0.897);
+
+    }
+
+    header {
+      height: 70px;
+      background-color: #34503d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 70px);
+      padding: 1rem;
+    }
+  </style>
+  <link rel="stylesheet" href="/img/milo.jpg">
+</head>
+<body>
+  <header>
+    R e p r o d u c e &nbsp; C a m i
+  </header>
+  <div class="linea"></div>
+    <main>
+    <music-track
+      title="Buen Día Portación de Rostro"
+      artist="Milo J"
+      cover="/img/milo.jpg"
+      audio="/img/Milo- Buen Día.mpeg" >
+      <p slot="extra">Escúchalo ahora en tu plataforma favorita </p>
+    </music-track>
+  </main>
+
+  <script type="module" src="music-track.js"></script>
+</body>
+</html>
